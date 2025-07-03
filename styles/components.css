@@ -87,7 +87,6 @@ button:hover,
 
 /* Testimonials */
 #testimonials {
-  background-image: url("../images/testimonial-bg.jpeg");
   background-size: cover;
   background-position: center;
   color: white;

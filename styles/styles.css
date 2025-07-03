@@ -417,3 +417,37 @@ footer {
 .page-header.home-header::before {
   background: none;
 }
+
+/* === Page Backgrounds === */
+
+body.home {
+  background-image: url('../images/home-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+body.mission {
+  background-image: url('../images/mission-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+body.services {
+  background-image: url('../images/services-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+body.featured {
+  background-image: url('../images/featuredauthor-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
