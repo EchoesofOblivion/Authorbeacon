@@ -85,20 +85,6 @@ nav a:focus,
   width: 60%;
 }
 
-.home-header {
-  background-image: url("../images/home-bg.jpeg");
-  background-size: cover;
-  background-position: center;
-  padding: 0.5rem 1rem; /* Even less padding */
-  text-align: center;
-  color: white;
-  height: 80px; /* Slimmer banner */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .home-header .site-title {
   font-size: 1.5rem; /* Smaller font */
   margin-bottom: 0.2rem;
@@ -115,6 +101,10 @@ nav a:focus,
   text-align: center;
   margin-top: 1.5em;
   font-size: 2.2em;
+}
+
+.home-header {
+  background-image: url("../images/home-bg.jpeg");
 }
 
 .site-subtitle {
