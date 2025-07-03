@@ -413,3 +413,7 @@ footer {
 }
 
 /* Add more as needed for other pages */
+
+.page-header.home-header::before {
+  background: none;
+}
