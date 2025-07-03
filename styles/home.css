@@ -3,10 +3,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 160px; /* Reduce height for a slimmer banner */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; /* Center horizontally */
   color: white;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
