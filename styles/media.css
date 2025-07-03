@@ -1,0 +1,29 @@
+/* ========== Media Queries & Responsive Utilities ========== */
+
+/* Example: Stack navigation and footer on small screens */
+@media (max-width: 600px) {
+  nav,
+  .main-nav {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .container,
+  .services-container,
+  .mission-content,
+  .featured-author-section,
+  .contact-container {
+    padding: 1em;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Add more responsive rules as needed */

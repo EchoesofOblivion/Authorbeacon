@@ -1,0 +1,40 @@
+{
+  "name": "AuthorBeacon",
+  "short_name": "AuthorBeacon",
+  "description": "A lighthouse for indie authors. Resources, community, and support.",
+  "id": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#4b0082",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.png",
+      "type": "image/png",
+      "sizes": "1920x1080"
+    },
+    {
+      "src": "/screenshots/service.png",
+      "type": "image/png",
+      "sizes": "1920x1080"
+    },
+        {
+          "src": "/screenshots/mission.png",
+          "type": "image/png",
+          "sizes": "1920x1080"
+        }
+      ]
+    }

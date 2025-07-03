@@ -1,0 +1,121 @@
+/* ========== Component Styles (components.css) ========== */
+
+/* In-progress banner */
+.in-progress-banner {
+  background-color: #ffcc00;
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Buttons */
+button,
+.carousel-btn,
+.cta a,
+.feedback-btn {
+  padding: 0.6em 1.2em;
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover,
+.carousel-btn:hover,
+.cta a:hover,
+.feedback-btn:hover {
+  background-color: #cc8400;
+}
+
+/* Quote carousel */
+.quote-carousel {
+  text-align: center;
+}
+
+.carousel-container {
+  background-color: #eee;
+  padding: 2em;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.quote-slide {
+  display: none;
+  font-style: italic;
+}
+
+.quote-slide.active {
+  display: block;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+/* Hero section */
+#hero {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 2em;
+  color: #d18500;
+}
+
+/* Testimonials */
+#testimonials {
+  background-image: url("../images/testimonial-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.testimonial-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2em;
+  border-radius: 10px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 2em;
+  background-color: #ffa500;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Feedback card */
+.feedback-card {
+  text-align: center;
+  padding: 2em;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 2em auto;
+  max-width: 600px;
+}

@@ -1,0 +1,98 @@
+/* contact.css */
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner/Header */
+.page-header {
+  background-color: #cc6600; /* orange banner */
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.page-header .site-title,
+.site-title {
+  font-size: 2.5rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.page-header .site-subtitle,
+.site-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+  font-weight: 400;
+}
+
+/* Navigation */
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #eee;
+  padding: 0.8em 0;
+}
+
+.main-nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #4b0082;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #7b38ce;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 2em 1em;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.contact-section p {
+  font-size: 1.1em;
+  margin-bottom: 2em;
+}
+
+/* Form Wrapper */
+.google-form-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.google-form-wrapper iframe {
+  width: 100%;
+  border: none;
+  min-height: 1100px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .main-nav a {
+    margin: 0.5em 0.5em;
+  }
+
+  .site-title {
+    font-size: 1.8em;
+  }
+
+  .contact-section h2 {
+    font-size: 1.6em;
+  }
+}

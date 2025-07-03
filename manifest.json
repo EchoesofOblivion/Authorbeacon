@@ -1,0 +1,61 @@
+{
+  "name": "AuthorBeacon – Where Indie Authors Shine",
+  "short_name": "AuthorBeacon",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "description": "A platform to support and showcase indie authors, offering community, reviews, and publishing tools.",
+  "lang": "en-US",
+  "dir": "auto",
+  "theme_color": "#cc6600",
+  "background_color": "#fffaf5",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/screenshots/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "description": "Home page showing featured authors and navigation"
+    },
+    {
+      "src": "images/screenshots/screenshot2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "description": "Mission page with platform purpose and values"
+    },
+    {
+      "src": "images/screenshots/screenshot3.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "description": "Services or Contact form page"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Featured Authors",
+      "url": "/featured.html",
+      "description": "Explore spotlighted indie authors and their works"
+    },
+    {
+      "name": "Contact Us",
+      "url": "/contact.html",
+      "description": "Get in touch with the AuthorBeacon team"
+    }
+  ]
+}
+
