@@ -89,10 +89,10 @@ nav a:focus,
   background-image: url("images/home-bg.jpeg");
   background-size: cover;
   background-position: center;
-  padding: 1.5rem 1rem; /* Reduced padding */
+  padding: 0.5rem 1rem; /* Even less padding */
   text-align: center;
   color: white;
-  height: 120px; /* Optional: set a fixed height */
+  height: 80px; /* Slimmer banner */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,12 +100,14 @@ nav a:focus,
 }
 
 .home-header .site-title {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem; /* Smaller font */
+  margin-bottom: 0.2rem;
+  margin-top: 0; /* Remove extra margin */
 }
 
 .home-header .site-subtitle {
-  font-size: 1.5rem;
+  font-size: 1rem; /* Smaller font */
+  margin-bottom: 0;
 }
 
 .site-title {
