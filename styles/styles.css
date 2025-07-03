@@ -400,3 +400,13 @@ footer {
   z-index: 1;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
+
+.services-header {
+  background-image: url("../images/services-bg.jpg");
+}
+
+.contact-header {
+  background-image: url("../images/contact-bg.jpg");
+}
+
+/* Add more as needed for other pages */
