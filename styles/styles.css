@@ -86,7 +86,7 @@ nav a:focus,
 }
 
 .home-header {
-  background-image: url("images/home-bg.jpeg");
+  background-image: url("../images/home-bg.jpeg");
   background-size: cover;
   background-position: center;
   padding: 0.5rem 1rem; /* Even less padding */
