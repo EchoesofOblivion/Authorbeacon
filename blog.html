@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AuthorBeacon – Blog</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <header class="page-header">
+      <div class="hero-text">
+        <h1>AuthorBeacon Blog</h1>
+        <p>Writing tips, author insights, and indie news</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <div id="post-list">
+        <!-- Blog post links will be loaded here -->
+      </div>
+
+      <article id="post-content" style="display:none;">
+        <button onclick="loadPostList()">← Back to Blog List</button>
+        <div id="post-html"></div>
+      </article>
+    </main>
+
+    <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/includes.js"></script>
+    <script src="js/blog.js"></script>
+  </body>
+</html>
