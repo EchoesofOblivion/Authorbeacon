@@ -1,65 +1,73 @@
-/* contact.css */
+/* ====================
+   Contact Page Styles
+==================== */
 
-body {
-  font-family: "Quicksand", sans-serif;
-  background-color: #fff;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-/* Banner/Header */
+/* Page Header */
 .page-header {
-  background-color: #cc6600; /* orange banner */
+  background-image: url("../images/contact-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
+  position: relative;
+  z-index: 1;
 }
 
-.page-header .site-title,
-.site-title {
-  font-size: 2.5rem;
-  margin: 0 0 0.25rem 0;
+.page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Optional overlay for contrast */
+  z-index: 0;
 }
 
-.page-header .site-subtitle,
-.site-subtitle {
-  font-size: 1.2rem;
-  margin-top: 0.5em;
-  font-weight: 400;
+.page-header h1,
+.page-header p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-/* Navigation */
-.main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #eee;
-  padding: 0.8em 0;
+/* Decorative Wave Divider */
+.header-divider {
+  position: relative;
+  z-index: 1;
+  margin-top: -1px;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  line-height: 0;
 }
 
-.main-nav a {
-  margin: 0 1em;
-  text-decoration: none;
-  color: #4b0082;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.main-nav a:hover {
-  color: #7b38ce;
+.header-divider svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* Contact Section */
 .contact-section {
-  padding: 2em 1em;
+  padding: 3em 1em;
   max-width: 900px;
   margin: auto;
   text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .contact-section h2 {
   font-size: 2em;
+  color: #cc6600;
   margin-bottom: 0.5em;
 }
 
@@ -68,7 +76,7 @@ body {
   margin-bottom: 2em;
 }
 
-/* Form Wrapper */
+/* Google Form Wrapper */
 .google-form-wrapper {
   width: 100%;
   overflow: hidden;
@@ -84,12 +92,13 @@ body {
 
 /* Responsive Tweaks */
 @media (max-width: 768px) {
-  .main-nav a {
-    margin: 0.5em 0.5em;
+  .page-header {
+    height: 220px;
+    padding: 1em;
   }
 
-  .site-title {
-    font-size: 1.8em;
+  .contact-section {
+    padding: 2em 1em;
   }
 
   .contact-section h2 {

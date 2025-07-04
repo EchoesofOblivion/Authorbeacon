@@ -1,13 +1,11 @@
 /* ====================
-   Global Styles
+   Global Reset & Base
 ==================== */
-/* ====================
-   Global Layout
-==================== */
-
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,20 +13,15 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 50px 0 0 0;
   line-height: 1.6;
-  background-color: #f7f2ec; /* Light beige background */
+  background-color: #f7f2ec;
   color: #333;
+  padding-top: 50px; /* space for banner */
 }
 
 main {
   flex: 1;
 }
-
-/* ====================
-   Global Components
-==================== */
 
 .container {
   max-width: 900px;
@@ -36,6 +29,9 @@ main {
   padding: 2em 1em;
 }
 
+/* ====================
+   In-Progress Banner
+==================== */
 .in-progress-banner {
   background-color: #ffcc00;
   color: #333;
@@ -49,29 +45,6 @@ main {
   width: 100%;
   z-index: 1000;
 }
-
-/* ====================
-   Navigation
-==================== */
-
-nav.main-nav {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-}
-
-nav.main-nav a {
-  color: white;
-  margin: 0 1em;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav.main-nav a:hover {
-  text-decoration: underline;
-}
-
 
 /* ====================
    Navigation
@@ -119,14 +92,88 @@ nav a:focus,
 }
 
 /* ====================
-   Home Page Layout
+   Page Header
 ==================== */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 2em 1em;
+.page-header {
+  width: 100%;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  position: relative;
 }
 
+.page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.page-header h1,
+.page-header p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.header-divider {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.header-divider svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ====================
+   Page Backgrounds
+==================== */
+body.mission {
+  background-image: url('../images/mission-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.services {
+  background-image: url('../images/services-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.featured {
+  background-image: url('../images/featuredauthor-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-header.home-header::before {
+  background: none;
+}
+
+/* ====================
+   Shared Components
+==================== */
 .section-divider {
   margin: 3em auto;
   border: none;
@@ -134,159 +181,17 @@ nav a:focus,
   width: 60%;
 }
 
-.home-header .site-title {
-  font-size: 1.5rem; /* Smaller font */
-  margin-bottom: 0.2rem;
-  margin-top: 0; /* Remove extra margin */
-}
-
-.home-header .site-subtitle {
-  font-size: 1rem; /* Smaller font */
-  margin-bottom: 0;
-}
-
-.site-title {
-  color: #ffa500;
-  text-align: center;
-  margin-top: 1.5em;
-  font-size: 2.2em;
-}
-
-.home-header {
-  background-image: url("../images/home-bg.jpeg");
-}
-
-.site-subtitle {
-  text-align: center;
-  font-style: italic;
-  margin-bottom: 1em;
-}
-
-/* Quote Carousel */
-.quote-carousel {
-  text-align: center;
-}
-
-.carousel-container {
-  background-color: #eee;
+.content-card {
+  background: rgba(255, 255, 255, 0.95);
   padding: 2em;
-  border-radius: 10px;
-  max-width: 700px;
-  margin: auto;
+  margin-top: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.quote-slide {
-  display: none;
-  font-style: italic;
-}
-
-.quote-slide.active {
-  display: block;
-}
-
-.quote-author {
-  display: block;
-  margin-top: 1em;
-  font-weight: bold;
-}
-
-.carousel-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-top: 1em;
-}
-
-.carousel-btn {
-  padding: 0.5em 1em;
-  background-color: #d18500;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.carousel-btn:hover {
-  background-color: #a66000;
-}
-
-/* Hero Section */
-#hero {
-  background-color: #f8f8f8;
-  text-align: center;
-  padding: 2em;
-  border-radius: 10px;
-}
-
-.hero-content h1 {
-  font-size: 2em;
-  color: #d18500;
-}
-
-/* Testimonials */
-#testimonials {
-  background-image: url("images/testimonial-bg.jpeg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 4em 2em;
-  text-align: center;
-}
-
-.testimonial-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 2em;
-  border-radius: 10px;
-}
-
-/* CTA */
-.cta {
-  text-align: center;
-  padding: 2em;
-  background-color: #ffa500;
-  color: white;
-  border-radius: 10px;
-}
-
-.cta a {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.6em 1.2em;
-  background-color: #333;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.cta a:hover {
-  background-color: #555;
-}
-
-/* Feedback Card */
-.feedback-card {
-  text-align: center;
-  padding: 2em;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  margin: 2em auto;
-  max-width: 600px;
-}
-
-.feedback-btn {
-  display: inline-block;
-  padding: 0.6em 1.2em;
-  background-color: #ffa500;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 1em;
-}
-
-.feedback-btn:hover {
-  background-color: #cc8400;
-}
-
-/* Footer */
+/* ====================
+   Footer
+==================== */
 footer {
   background-color: #222;
   color: white;
@@ -319,181 +224,13 @@ footer {
   text-decoration: underline;
 }
 
-/* =========================
-   Featured Author Page
-========================= */
-.featured-banner {
-  background-color: #ffe9cc;
-  padding: 3em 1em;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* ====================
+   Home Specific Layout
+==================== */
+.home-header {
+  background-image: url("../images/home-bg.jpeg");
 }
 
-.featured-banner h1 {
-  margin: 0;
-  font-size: 2.5em;
-  color: #cc6600;
-}
-
-.featured-banner p {
-  color: #663300;
-  font-size: 1.1em;
-  margin-top: 0.5em;
-}
-
-.featured-author-container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 3em 1em;
-}
-
-.author-profile {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  background-color: #fffaf5;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  padding: 2em;
-}
-
-.author-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.author-details {
-  text-align: center;
-}
-
-.author-bio {
-  margin-top: 1em;
-  font-size: 1.05em;
-}
-
-.book-cover {
-  width: 150px;
-  height: auto;
-  margin-top: 1em;
-  border-radius: 8px;
-}
-
-.read-link {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.5em 1.2em;
-  background-color: #cc6600;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.read-link:hover {
-  background-color: #994c00;
-}
-
-@media (max-width: 768px) {
-  .author-profile {
-    padding: 1.5em;
-  }
-  .author-photo {
-    width: 160px;
-    height: 160px;
-  }
-}
-.page-header {
-  width: 100%;
-  min-height: 300px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 60px 20px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.page-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* Optional overlay for contrast */
-  z-index: 0;
-}
-
-.page-header h1,
-.page-header p {
-  position: relative;
-  z-index: 1;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-}
-
-.header-divider {
-  position: relative; /* 'relative' instead of 'absolute' avoids z-index problems */
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.header-divider svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.services-header {
-  background-image: url("../images/services-bg.jpg");
-}
-
-.contact-header {
-  background-image: url("../images/contact-bg.jpg");
-}
-
-/* Add more as needed for other pages */
-
-.page-header.home-header::before {
-  background: none;
-}
-
-/* === Page Backgrounds === */
-
-body.mission {
-  background-image: url('../images/mission-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fff;
-}
-
-body.services {
-  background-image: url('../images/services-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fff;
-}
-
-body.featured {
-  background-image: url('../images/featuredauthor-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fff;
-}
-/* Overlay for home content to ensure readability */
 .home-overlay {
   background-color: rgba(255, 255, 255, 0.88);
   padding: 2em;
@@ -504,3 +241,77 @@ body.featured {
   color: #222;
 }
 
+.site-title {
+  color: #ffa500;
+  text-align: center;
+  font-size: 2.2em;
+  margin: 1.5em 0 0.5em;
+}
+
+.site-subtitle {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.home-header .site-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0;
+}
+
+.home-header .site-subtitle {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+/* ====================
+   CTA Section
+==================== */
+.cta {
+  text-align: center;
+  padding: 2em;
+  background-color: #ffa500;
+  color: white;
+  border-radius: 10px;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.6em 1.2em;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta a:hover {
+  background-color: #555;
+}
+
+/* ====================
+   Feedback Card
+==================== */
+.feedback-card {
+  text-align: center;
+  padding: 2em;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 2em auto;
+  max-width: 600px;
+}
+
+.feedback-btn {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background-color: #ffa500;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+.feedback-btn:hover {
+  background-color: #cc8400;
+}
