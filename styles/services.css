@@ -4,10 +4,6 @@
 
 /* Header Banner */
 
-.services-header {
-  background-image: url("../images/services-bg.jpg");
-}
-
 .page-header::before {
   content: "";
   position: absolute;
