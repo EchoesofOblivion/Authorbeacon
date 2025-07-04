@@ -9,8 +9,8 @@ const urlsToCache = [
   "/featured.html",
   "/contact.html",
   "/blog.html",
-  "/styles.css",               // Only include if this file actually exists
-  "/mission.css",              // Only include if this file actually exists
+  "/css/styles.css",         // ✅ Corrected path
+  "/css/mission.css",        // ✅ Corrected path
   "/favicon-32x32.png",
   "/favicon-16x16.png",
   "/android-chrome-192x192.png",
