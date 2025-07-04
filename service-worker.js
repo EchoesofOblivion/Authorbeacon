@@ -5,20 +5,36 @@ const urlsToCache = [
   "/",
   "/index.html",
   "/mission.html",
-  "/styles.css",
-  "/mission.css",
+  "/services.html",
+  "/featured.html",
+  "/contact.html",
+  "/blog.html",
+  "/styles.css",               // Only include if this file actually exists
+  "/mission.css",              // Only include if this file actually exists
   "/favicon-32x32.png",
   "/favicon-16x16.png",
-  "/apple-touch-icon.png",
-  "/site.webmanifest"
+  "/android-chrome-192x192.png",
+  "/site.webmanifest",
+  "/manifest.json"
 ];
 
-// Install the service worker and cache assets
+// Install the service worker and cache assets (safely)
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache);
-    })
+    caches.open(CACHE_NAME).then((cache) =>
+      Promise.all(
+        urlsToCache.map((url) =>
+          fetch(url)
+            .then((response) => {
+              if (!response.ok) throw new Error(`${url} failed to fetch`);
+              return cache.put(url, response.clone());
+            })
+            .catch((err) => {
+              console.warn(`Skipping cache for ${url}:`, err.message);
+            })
+        )
+      )
+    )
   );
 });
 
@@ -30,3 +46,4 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
+
