@@ -58,9 +58,18 @@
 <header class="page-header home-header">
   <h1 class="site-title">AuthorBeacon</h1>
   <p class="site-subtitle">A Lighthouse for Independent Voices</p>
-  <div class="header-divider">
+</header>
+
+<!-- ✅ WAVE TRANSITION -->
+<div class="header-divider">
   <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-    <path d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z" fill="white"></path>
+    <defs>
+      <linearGradient id="fadeDown" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="white" stop-opacity="0.8" />
+        <stop offset="100%" stop-color="white" stop-opacity="1" />
+      </linearGradient>
+    </defs>
+    <path d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z" fill="url(#fadeDown)"></path>
   </svg>
 </div>
 
