@@ -451,3 +451,13 @@ body.featured {
   background-repeat: no-repeat;
   background-color: #fff;
 }
+/* Overlay for home content to ensure readability */
+.home-overlay {
+  background-color: rgba(255, 255, 255, 0.88);
+  padding: 2em;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #222;
+}
