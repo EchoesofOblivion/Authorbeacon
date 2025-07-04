@@ -9,17 +9,18 @@ const urlsToCache = [
   "/featured.html",
   "/contact.html",
   "/blog.html",
-  "/css/styles.css",         // ✅ Corrected path
-  "/css/mission.css",        // ✅ Corrected path
+  "/styles/styles.css", // <-- Corrected path
+  "/styles/mission.css", // <-- Corrected path
   "/favicon-32x32.png",
   "/favicon-16x16.png",
   "/android-chrome-192x192.png",
   "/site.webmanifest",
-  "/manifest.json"
+  "/manifest.json",
 ];
 
 // Install the service worker and cache assets (safely)
 self.addEventListener("install", (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) =>
       Promise.all(
@@ -46,4 +47,3 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
-
