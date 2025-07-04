@@ -5,8 +5,20 @@
 /* Page Header */
 
 .contact-header {
-  background-image: url("../images/contact-bg.jpg");
+  background-image: url("../images/contact-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
+
 
 .page-header::before {
   content: "";
