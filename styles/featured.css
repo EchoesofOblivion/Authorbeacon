@@ -3,19 +3,9 @@
 ========================= */
 
 /* Page Header */
-.page-header {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  position: relative;
-  z-index: 1;
+
+.featured-header {
+  background-image: url("../images/featuredauthor-bg.jpg");
 }
 
 .page-header::before {

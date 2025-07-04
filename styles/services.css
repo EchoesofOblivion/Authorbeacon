@@ -3,19 +3,9 @@
 ==================== */
 
 /* Header Banner */
-.page-header {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  position: relative;
-  z-index: 1;
+
+.services-header {
+  background-image: url("../images/services-bg.jpg");
 }
 
 .page-header::before {
