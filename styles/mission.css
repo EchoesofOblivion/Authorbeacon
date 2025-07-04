@@ -1,3 +1,8 @@
+/* ====================
+   Mission Page Styles
+==================== */
+
+/* Header with background image */
 .page-header {
   background-size: cover;
   background-position: center;
@@ -8,4 +13,87 @@
   justify-content: center;
   color: white;
   text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Specific background image for Mission page */
+.mission-header {
+  background-image: url("../images/mission-bg.jpg"); /* Adjust path if needed */
+}
+
+/* Optional text styling in header */
+.page-header h1,
+.page-header p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Decorative white wave divider */
+.header-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+
+.header-divider svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Main content container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2em 1em;
+}
+
+/* Content block with card style */
+.content-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2em;
+  margin-top: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Quote block style */
+.mission-quote {
+  margin-top: 3em;
+  font-style: italic;
+  text-align: center;
+  color: #444;
+}
+
+.mission-quote span {
+  display: block;
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Section dividers */
+.section-divider {
+  margin: 3em 0;
+  border: 0;
+  border-top: 2px solid #ccc;
+}
+
+/* Responsive tweaks (optional) */
+@media (max-width: 600px) {
+  .page-header {
+    height: 220px;
+    padding: 1em;
+  }
+
+  .content-card {
+    padding: 1.5em 1em;
+  }
 }
