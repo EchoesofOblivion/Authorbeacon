@@ -1,1 +1,39 @@
-<!-- Updated Contact Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuthorBeacon – Contact</title>
+  <meta name="description" content="Get in touch with AuthorBeacon. We welcome questions, feedback, and suggestions from our community." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>AuthorBeacon</h1>
+    <p><em>A Lighthouse for Independent Voices</em></p>
+  </header>
+
+  <main class="contact-container">
+    <section>
+      <h2>Reach Out</h2>
+      <p>If you have questions, suggestions, or feedback, use the form below to get in touch with our team.</p>
+
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="includes.js"></script>
+</body>
+</html>
