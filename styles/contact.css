@@ -4,7 +4,7 @@
 
 /* Page header background */
 .contact-header {
-  background-image: url("../images/contact-bg.jpg");
+  background-image: url("../images/contact-bg.png");
   padding-top: 80px; /* offset for banner + nav */
 }
 
