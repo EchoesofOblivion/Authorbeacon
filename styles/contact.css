@@ -2,33 +2,10 @@
    Contact Page Styles
 ==================== */
 
-/* Page Header */
+/* Header */
 
 .contact-header {
-  background-image: url("../images/contact-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-
-.page-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* Optional overlay for contrast */
-  z-index: 0;
+  background-image: url("../images/contact-bg.jpg");
 }
 
 .page-header h1,
@@ -40,13 +17,15 @@
 
 /* Decorative Wave Divider */
 .header-divider {
-  position: relative;
-  z-index: 1;
-  margin-top: -1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 100px;
   overflow: hidden;
   line-height: 0;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .header-divider svg {
@@ -55,54 +34,50 @@
   height: 100%;
 }
 
-/* Contact Section */
-.contact-section {
-  padding: 3em 1em;
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
+.page-header {
+  padding-top: 80px; /* offset for banner + nav bar */
+}
+
+
+/* Content Styling */
+.content-card {
   background: rgba(255, 255, 255, 0.95);
+  padding: 2em;
+  margin-top: 2em;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.contact-section h2 {
-  font-size: 2em;
-  color: #cc6600;
-  margin-bottom: 0.5em;
+/* Quote Block */
+.mission-quote {
+  margin-top: 3em;
+  font-style: italic;
+  text-align: center;
+  color: #444;
 }
 
-.contact-section p {
-  font-size: 1.1em;
-  margin-bottom: 2em;
+.mission-quote span {
+  display: block;
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-style: normal;
 }
 
-/* Google Form Wrapper */
-.google-form-wrapper {
-  width: 100%;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.google-form-wrapper iframe {
-  width: 100%;
-  border: none;
-  min-height: 1100px;
+/* Section Dividers */
+.section-divider {
+  margin: 3em 0;
+  border: 0;
+  border-top: 2px solid #ccc;
 }
 
 /* Responsive Tweaks */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .page-header {
     height: 220px;
     padding: 1em;
   }
 
-  .contact-section {
-    padding: 2em 1em;
-  }
-
-  .contact-section h2 {
-    font-size: 1.6em;
+  .content-card {
+    padding: 1.5em 1em;
   }
 }
