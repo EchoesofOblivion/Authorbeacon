@@ -16,6 +16,13 @@ body {
   line-height: 1.6;
   background-color: #f7f2ec;
   color: #333;
+body.home-page {
+  padding-top: 50px;
+}
+
+body {
+  padding-top: 0; /* remove default */
+}
 
 }
 
