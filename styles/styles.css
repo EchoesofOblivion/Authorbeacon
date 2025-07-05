@@ -64,6 +64,7 @@ nav,
   background-color: #222;
   padding: 0.8em 1em;
   flex-wrap: wrap;
+  z-index: 900;; /* Ensure nav is above other content */
 }
 
 nav a,
@@ -97,6 +98,12 @@ nav a:focus,
     gap: 0.5em;
   }
 }
+
+/* Push nav down only on home page when banner is visible */
+.home-page nav {
+  margin-top: 50px;
+}
+
 
 /* ====================
    Page Header
