@@ -2,23 +2,14 @@
    Featured Author Page Styles
 ========================= */
 
-/* Page Header */
-
+/* Header background & spacing */
 .featured-header {
   background-image: url("../images/featuredauthor-bg.jpg");
-}
-/* =========================
-   Featured Author Page Header
-========================= */
-.page-header h1,
-.page-header p {
-  position: relative;
-  z-index: 2;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  padding-top: 80px; /* offset for banner + nav */
 }
 
 /* Decorative Wave Divider */
-.header-divider {
+.featured-divider {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -30,39 +21,10 @@
   pointer-events: none;
 }
 
-.header-divider svg {
+.featured-divider svg {
   display: block;
   width: 100%;
   height: 100%;
-}
-
-.page-header {
-  padding-top: 80px; /* offset for banner + nav bar */
-}
-
-
-/* Content Styling */
-.content-card {
-  background: rgba(255, 255, 255, 0.95);
-  padding: 2em;
-  margin-top: 2em;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-/* Quote Block */
-.mission-quote {
-  margin-top: 3em;
-  font-style: italic;
-  text-align: center;
-  color: #444;
-}
-
-.mission-quote span {
-  display: block;
-  margin-top: 0.5em;
-  font-weight: bold;
-  font-style: normal;
 }
 
 /* Section Dividers */
@@ -74,7 +36,7 @@
 
 /* Responsive Tweaks */
 @media (max-width: 600px) {
-  .page-header {
+  .featured-header {
     height: 220px;
     padding: 1em;
   }
