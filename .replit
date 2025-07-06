@@ -1,0 +1,8 @@
+modules = ["web", "nodejs-20"]
+run = "npm install lite-server --save-dev"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "npm install lite-server --save-dev"]
