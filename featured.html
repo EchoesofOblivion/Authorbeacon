@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,68 +8,160 @@
   <meta name="description" content="Meet standout indie authors from our community. Explore their stories, books, and creative journeys." />
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/featured.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
 
   <nav aria-label="Main navigation">
-  <a href="index.html">Home</a>
-  <a href="mission.html">Mission</a>
-  <a href="services.html">Services</a>
-  <a href="featured.html">Featured Author</a>
-  <a href="contact.html">Contact</a>
-  <a href="index.html#cta">Join</a>
-</nav>
+    <a href="index.html">Home</a>
+    <a href="mission.html">Mission</a>
+    <a href="services.html">Services</a>
+    <a href="featured.html">Featured Author</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html#cta">Join</a>
+  </nav>
 
   <header class="page-header featured-header">
-    <h1>Spotlight Authors</h1>
-    <p><em>Celebrating Indie Talent and Unique Voices.</em></p>
+    <div class="hero-content">
+      <h1>Spotlight Authors</h1>
+      <p><em>Celebrating Indie Talent and Unique Voices</em></p>
+      <div class="header-accent">
+        <i class="fas fa-star"></i>
+        <span>Discover Amazing Stories</span>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
   </header>
 
   <main class="featured-author-section">
-    <section>
-      <h2>Spotlight Writers</h2>
-      <div class="author-card">
-        <img src="images/jane-doe.jpg" alt="Photo of Jane Doe" />
-        <h3>Jane Doe</h3>
-        <p>Book will be inserted</p>
-        <p>Jane Doe is a placeholder name until I finish this section.</p>
+    <section class="intro-section">
+      <div class="container">
+        <h2>Meet Our Featured Authors</h2>
+        <p class="intro-text">Every month, we shine the spotlight on exceptional indie authors who are making waves in the literary world. These talented writers represent the diversity, creativity, and passion that makes independent publishing so special.</p>
+      </div>
+    </section>
+
+    <section class="authors-grid">
+      <div class="container">
+        <div class="author-card featured-author">
+          <div class="author-image">
+            <img src="images/jane-doe.jpg" alt="Photo of Jane Doe" />
+            <div class="featured-badge">
+              <i class="fas fa-crown"></i>
+              <span>Featured Author</span>
+            </div>
+          </div>
+          <div class="author-content">
+            <h3>Jane Doe</h3>
+            <p class="author-genre">Fantasy & Science Fiction</p>
+            <p class="author-bio">Jane Doe is a rising star in the indie fantasy scene, crafting immersive worlds filled with complex characters and intricate magic systems. Her debut novel has captivated readers worldwide.</p>
+            
+            <div class="book-showcase">
+              <h4>Latest Release</h4>
+              <div class="book-info">
+                <div class="book-cover-placeholder">
+                  <i class="fas fa-book"></i>
+                </div>
+                <div class="book-details">
+                  <h5>"Echoes of the Ancient Realm"</h5>
+                  <p>A thrilling fantasy adventure that explores the bonds between magic and humanity.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="author-stats">
+              <div class="stat">
+                <i class="fas fa-book-open"></i>
+                <span>3 Books Published</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-star"></i>
+                <span>4.8/5 Rating</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-users"></i>
+                <span>5K+ Readers</span>
+              </div>
+            </div>
+
+            <div class="author-links">
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-external-link-alt"></i>
+                Visit Author's Page
+              </a>
+              <a href="#" class="btn btn-secondary">
+                <i class="fas fa-book"></i>
+                View Books
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder for future authors -->
+        <div class="author-card coming-soon">
+          <div class="coming-soon-content">
+            <i class="fas fa-plus-circle"></i>
+            <h3>Next Featured Author</h3>
+            <p>We're always looking for amazing indie authors to feature. Could it be you?</p>
+            <a href="contact.html" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i>
+              Submit Your Work
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="call-to-action">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Want to be Featured?</h2>
+          <p>Are you an indie author with a compelling story to tell? We'd love to learn about your work and potentially feature you in our spotlight section.</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary btn-large">
+              <i class="fas fa-star"></i>
+              Apply for Spotlight
+            </a>
+            <a href="services.html" class="btn btn-secondary btn-large">
+              <i class="fas fa-info-circle"></i>
+              Learn About Our Services
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <script src="includes.js"></script>
-
   <footer>
-    <footer>
-      <div class="footer-content">
-        <div class="social-media">
-          <h3>Follow Us</h3>
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram">
-                <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/yourusername" target="_blank" rel="noopener" aria-label="X">
-                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener" aria-label="Facebook">
-                <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="contact-info">
-          <p>
-            Email:
-            <a href="mailto:support@authorbeacon.com">support@authorbeacon.com</a>
-          </p>
-        </div>
+    <div class="footer-content">
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/yourusername" target="_blank" rel="noopener" aria-label="X">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
+            </a>
+          </li>
+        </ul>
       </div>
-      <p>&copy; 2025 AuthorBeacon. All rights reserved.</p>
+      <div class="contact-info">
+        <p>
+          Email:
+          <a href="mailto:support@authorbeacon.com">support@authorbeacon.com</a>
+        </p>
+      </div>
+    </div>
+    <p>&copy; 2025 AuthorBeacon. All rights reserved.</p>
   </footer>
 </body>
 </html>
