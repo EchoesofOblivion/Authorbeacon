@@ -2,7 +2,7 @@
 /* ========== Enhanced Navigation Styles ========== */
 nav,
 .main-nav {
-  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  background: linear-gradient(135deg, var(--bg-dark), var(--bg-medium));
   padding: 0;
   display: flex;
   justify-content: center;
@@ -12,10 +12,11 @@ nav,
   position: sticky;
   top: 40px; /* Account for banner */
   z-index: 100;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-hover);
   border-radius: 12px;
   margin: 0 1rem;
   backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 nav a,
@@ -39,7 +40,7 @@ nav a::before,
   left: 0;
   width: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--primary-orange), var(--primary-dark));
+  background: linear-gradient(90deg, var(--primary-gold), var(--accent-gold));
   transition: var(--transition);
 }
 
@@ -50,16 +51,16 @@ nav a:hover::before,
 
 nav a:hover,
 .main-nav a:hover {
-  background: rgba(255, 165, 0, 0.1);
+  background: rgba(212, 175, 55, 0.15);
   transform: translateY(-2px);
-  color: var(--primary-orange);
+  color: var(--accent-gold);
 }
 
 /* Active navigation state */
 nav a.active,
 .main-nav a.active {
-  background: rgba(255, 165, 0, 0.2);
-  color: var(--primary-orange);
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--accent-gold);
 }
 
 nav a.active::before,
@@ -74,14 +75,14 @@ nav a:focus,
 .cta a:focus,
 .feedback-btn:focus,
 .footer-content a:focus {
-  outline: 2px solid var(--primary-orange);
+  outline: 2px solid var(--primary-gold);
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba(255, 165, 0, 0.2);
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.3);
 }
 
 /* Enhanced Footer Styles */
 footer {
-  background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+  background: linear-gradient(135deg, var(--bg-dark), var(--bg-medium));
   color: white;
   padding: 3rem 2rem 2rem;
   margin-top: 4rem;
@@ -97,7 +98,7 @@ footer::before {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-orange), var(--primary-dark));
+  background: linear-gradient(90deg, var(--primary-gold), var(--accent-gold));
 }
 
 .footer-content {
@@ -111,9 +112,10 @@ footer::before {
 }
 
 .footer-section h3 {
-  color: var(--primary-orange);
+  color: var(--accent-gold);
   margin-bottom: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .footer-content ul {
@@ -135,7 +137,7 @@ footer::before {
 }
 
 .footer-content a:hover {
-  color: var(--primary-orange);
+  color: var(--accent-gold);
   text-decoration: underline;
   transform: translateX(5px);
 }
@@ -144,33 +146,59 @@ footer::before {
   text-align: center;
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Social media links */
-.social-links {
+.social-media {
+  text-align: center;
+}
+
+.social-media h3 {
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
+.social-media ul {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin: 1rem 0;
+  flex-wrap: wrap;
 }
 
-.social-links a {
+.social-media a {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: rgba(255, 165, 0, 0.1);
-  border-radius: 50%;
-  color: var(--primary-orange);
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 25px;
+  color: var(--accent-gold);
   transition: var(--transition);
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.social-links a:hover {
-  background: var(--primary-orange);
+.social-media a:hover {
+  background: var(--primary-gold);
   color: white;
   transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-info p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-info a {
+  color: var(--accent-gold);
+  font-weight: 600;
 }
 
 /* Responsive Navigation/Footer */
@@ -198,7 +226,7 @@ footer::before {
     text-align: center;
   }
 
-  .social-links {
+  .social-media ul {
     justify-content: center;
   }
 }
@@ -211,5 +239,10 @@ footer::before {
 
   footer {
     padding: 2rem 1rem 1rem;
+  }
+
+  .social-media a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
   }
 }

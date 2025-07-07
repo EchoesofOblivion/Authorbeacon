@@ -1,16 +1,22 @@
 
 /* ========== Base Styles (base.css) ========== */
 :root {
-  --primary-orange: #ffa500;
-  --primary-dark: #cc8400;
-  --text-dark: #333;
-  --text-light: #666;
-  --bg-light: #fffaf5;
-  --bg-card: #ffffff;
-  --bg-overlay: rgba(0, 0, 0, 0.6);
-  --border-light: #e0e0e0;
-  --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
-  --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.15);
+  --primary-gold: #D4AF37;
+  --primary-dark-gold: #B8860B;
+  --accent-gold: #FFD700;
+  --text-dark: #2C2C2C;
+  --text-light: #555555;
+  --text-muted: #777777;
+  --bg-light: #FAFAFA;
+  --bg-card: #FFFFFF;
+  --bg-dark: #1A1A1A;
+  --bg-medium: #2D2D2D;
+  --bg-overlay: rgba(26, 26, 26, 0.85);
+  --border-light: #E8E8E8;
+  --border-gold: #D4AF37;
+  --shadow-light: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 24px rgba(0, 0, 0, 0.12);
+  --shadow-gold: 0 4px 20px rgba(212, 175, 55, 0.25);
   --transition: all 0.3s ease;
 }
 
@@ -56,19 +62,19 @@ p {
 }
 
 a {
-  color: var(--primary-orange);
+  color: var(--primary-gold);
   text-decoration: none;
   transition: var(--transition);
 }
 
 a:hover {
-  color: var(--primary-dark);
+  color: var(--primary-dark-gold);
   text-decoration: underline;
 }
 
 a:focus,
 button:focus {
-  outline: 2px solid var(--primary-orange);
+  outline: 2px solid var(--primary-gold);
   outline-offset: 2px;
 }
 
@@ -95,6 +101,6 @@ html {
 
 /* Selection styling */
 ::selection {
-  background-color: var(--primary-orange);
+  background-color: var(--primary-gold);
   color: white;
 }
