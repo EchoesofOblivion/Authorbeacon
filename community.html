@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuthorBeacon Community – Connect, Chat, Collaborate</title>
+    <meta name="description" content="Join the AuthorBeacon community to chat about books, leave reviews, and connect with fellow readers and authors.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- In-progress banner -->
+    <div class="in-progress-banner">
+        🚧 Community Feature Coming Soon – Join the waitlist! 🚧
+    </div>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Mission</a>
+        <a href="services.html">Services</a>
+        <a href="featured.html">Featured Authors</a>
+        <a href="community.html" class="active">Community</a>
+        <a href="contact.html">Contact</a>
+        <a href="#membership">Join</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="page-header community-header">
+        <div class="hero-content">
+            <h1>AuthorBeacon Community</h1>
+            <p class="site-subtitle">Where Readers Meet Authors</p>
+            <div class="header-accent">
+                <i class="fas fa-users"></i>
+                <span>Connect • Chat • Collaborate</span>
+                <i class="fas fa-users"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Community Overview -->
+        <section class="section">
+            <div class="container">
+                <div class="content-card">
+                    <h2>Welcome to Our Community Hub</h2>
+                    <p>Join a vibrant community of readers and authors where literary passion meets collaboration. Share your thoughts on the latest reads, discover new voices, and connect with like-minded book lovers.</p>
+                    
+                    <div class="community-features">
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-book-reader fa-2x"></i>
+                                <h3>Book Discussions</h3>
+                                <p>Join ongoing conversations about current reads, classics, and hidden gems.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-star fa-2x"></i>
+                                <h3>Author Reviews</h3>
+                                <p>Share honest reviews and discover your next favorite author.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-pen-fancy fa-2x"></i>
+                                <h3>Author Collaboration</h3>
+                                <p>Exclusive space for authors to brainstorm, collaborate, and share ideas.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-comments fa-2x"></i>
+                                <h3>Live Chat Rooms</h3>
+                                <p>Real-time discussions with fellow community members.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Levels -->
+        <section id="membership" class="section">
+            <div class="container">
+                <h2 class="text-center">Community Membership</h2>
+                <div class="membership-grid">
+                    
+                    <!-- Reader Membership -->
+                    <div class="membership-card reader-card">
+                        <div class="card-header">
+                            <i class="fas fa-book"></i>
+                            <h3>Reader Member</h3>
+                            <div class="price">Free</div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Perfect for Book Lovers</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Book discussion forums</li>
+                                <li><i class="fas fa-check"></i> Leave author reviews</li>
+                                <li><i class="fas fa-check"></i> Reading group chats</li>
+                                <li><i class="fas fa-check"></i> Monthly book recommendations</li>
+                                <li><i class="fas fa-check"></i> Community events access</li>
+                                <li><i class="fas fa-check"></i> Book club participation</li>
+                            </ul>
+                            <button class="btn btn-primary membership-btn" onclick="joinAsMember('reader')">
+                                <i class="fas fa-user-plus"></i>
+                                Join as Reader
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Author Membership -->
+                    <div class="membership-card author-card featured">
+                        <div class="featured-badge">
+                            <i class="fas fa-crown"></i>
+                            Popular
+                        </div>
+                        <div class="card-header">
+                            <i class="fas fa-feather-alt"></i>
+                            <h3>Author Member</h3>
+                            <div class="price">$9.99<span>/month</span></div>
+                        </div>
+                        <div class="card-content">
+                            <h4>Everything for Authors</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> All Reader Member benefits</li>
+                                <li><i class="fas fa-crown"></i> Private author collaboration space</li>
+                                <li><i class="fas fa-crown"></i> Story brainstorming sessions</li>
+                                <li><i class="fas fa-crown"></i> Writing workshop access</li>
+                                <li><i class="fas fa-crown"></i> Manuscript feedback groups</li>
+                                <li><i class="fas fa-crown"></i> Publishing guidance forums</li>
+                                <li><i class="fas fa-crown"></i> Author spotlights eligibility</li>
+                                <li><i class="fas fa-crown"></i> Direct beta reader connections</li>
+                            </ul>
+                            <button class="btn btn-primary membership-btn" onclick="joinAsMember('author')">
+                                <i class="fas fa-pen-fancy"></i>
+                                Join as Author
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chat Rooms Preview -->
+        <section class="section">
+            <div class="container">
+                <div class="chat-preview">
+                    <h2>Community Chat Rooms</h2>
+                    <p>Get a glimpse of what our community members are discussing:</p>
+                    
+                    <div class="chat-rooms-grid">
+                        <div class="chat-room-card">
+                            <div class="room-header">
+                                <i class="fas fa-book-open"></i>
+                                <h3>Current Reads</h3>
+                                <span class="member-count">127 members</span>
+                            </div>
+                            <div class="chat-preview-content">
+                                <div class="message">
+                                    <strong>Sarah_BookLover:</strong> Just finished "The Seven Husbands of Evelyn Hugo" - absolutely stunning! 📚
+                                </div>
+                                <div class="message">
+                                    <strong>Mike_Reads:</strong> That's on my TBR! How would you rate it?
+                                </div>
+                                <div class="message">
+                                    <strong>BookishEmily:</strong> @Mike_Reads Definitely a 5/5 from me!
+                                </div>
+                            </div>
+                            <div class="join-prompt">
+                                <p>Join to participate in this discussion</p>
+                            </div>
+                        </div>
+
+                        <div class="chat-room-card">
+                            <div class="room-header">
+                                <i class="fas fa-star"></i>
+                                <h3>Author Reviews</h3>
+                                <span class="member-count">89 members</span>
+                            </div>
+                            <div class="chat-preview-content">
+                                <div class="message">
+                                    <strong>LiteraryLisa:</strong> Looking for indie romance authors - any recommendations?
+                                </div>
+                                <div class="message">
+                                    <strong>Romance_Reader:</strong> Check out Emma Sterling! Her latest is amazing 💕
+                                </div>
+                            </div>
+                            <div class="join-prompt">
+                                <p>Join to share and discover reviews</p>
+                            </div>
+                        </div>
+
+                        <div class="chat-room-card author-only">
+                            <div class="room-header">
+                                <i class="fas fa-lock"></i>
+                                <h3>Author Workshop</h3>
+                                <span class="member-count">34 authors</span>
+                                <span class="exclusive-badge">Authors Only</span>
+                            </div>
+                            <div class="chat-preview-content blurred">
+                                <div class="message">
+                                    <strong>J_WritesFantasy:</strong> Need help with world-building for my new series...
+                                </div>
+                                <div class="message">
+                                    <strong>Mystery_Author:</strong> Have you considered creating a...
+                                </div>
+                            </div>
+                            <div class="join-prompt">
+                                <p>Author membership required</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Guidelines -->
+        <section class="section">
+            <div class="container">
+                <div class="guidelines-card">
+                    <h2><i class="fas fa-heart"></i> Community Guidelines</h2>
+                    <div class="guidelines-grid">
+                        <div class="guideline-item">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Be Respectful</h3>
+                            <p>Treat all members with kindness and respect, regardless of their reading preferences or writing experience.</p>
+                        </div>
+                        <div class="guideline-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>No Spoilers</h3>
+                            <p>Use spoiler tags when discussing plot points. Let everyone enjoy their reading journey.</p>
+                        </div>
+                        <div class="guideline-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h3>Constructive Feedback</h3>
+                            <p>Provide helpful, constructive criticism when reviewing or discussing works.</p>
+                        </div>
+                        <div class="guideline-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Support Each Other</h3>
+                            <p>Celebrate successes, offer encouragement, and help fellow community members grow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon Features -->
+        <section class="section">
+            <div class="container">
+                <div class="coming-soon-card">
+                    <h2>Coming Soon to Our Community</h2>
+                    <div class="feature-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">Q2 2025</div>
+                            <div class="timeline-content">
+                                <h3>Live Video Book Clubs</h3>
+                                <p>Face-to-face discussions with your favorite community members</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Q3 2025</div>
+                            <div class="timeline-content">
+                                <h3>Author-Reader Speed Dating</h3>
+                                <p>Quick connections between authors and their target readers</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Q4 2025</div>
+                            <div class="timeline-content">
+                                <h3>Collaborative Writing Projects</h3>
+                                <p>Community-driven stories and anthologies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Join the Conversation?</h2>
+                <p>Become part of a community that celebrates the love of reading and the art of writing. Choose your membership level and start connecting today.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" onclick="joinAsMember('reader')">
+                        <i class="fas fa-book"></i>
+                        Join as Reader (Free)
+                    </button>
+                    <button class="btn btn-secondary btn-large" onclick="joinAsMember('author')">
+                        <i class="fas fa-feather-alt"></i>
+                        Join as Author ($9.99/mo)
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <h3>Follow Our Community</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/authorbeacon" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/authorbeacon" target="_blank" rel="noopener" aria-label="X">
+                            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/authorbeacon" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <p>
+                    Community Support:
+                    <a href="mailto:community@authorbeacon.com">community@authorbeacon.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AuthorBeacon Community. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/includes.js"></script>
+    <script src="js/community.js"></script>
+</body>
+</html>
