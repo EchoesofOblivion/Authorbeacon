@@ -140,17 +140,8 @@ function closeMembershipModal(element) {
 }
 
 function proceedToSignup(type) {
-    // In production, this would integrate with your payment/signup system
-    // For now, redirect to contact page with membership info
-    const contactUrl = `contact.html?membership=${type}&action=signup`;
-    
-    // Show success message
-    alert(`Thank you for your interest in ${type} membership! Redirecting you to complete your signup...`);
-    
-    // Redirect after short delay
-    setTimeout(() => {
-        window.location.href = contactUrl;
-    }, 1000);
+    // Redirect to membership signup page
+    window.location.href = `membership-signup.html?plan=${type}`;
 }
 
 // Add CSS for modals

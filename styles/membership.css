@@ -1,0 +1,193 @@
+
+/* Membership Signup Styles */
+.signup-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.signup-container h1 {
+    text-align: center;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.membership-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.membership-option {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid var(--border-light);
+    transition: var(--transition);
+    position: relative;
+    text-align: center;
+}
+
+.membership-option:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.membership-option.featured {
+    border-color: var(--primary-gold);
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.2);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -10px;
+    right: 2rem;
+    background: linear-gradient(135deg, var(--primary-gold), var(--accent-gold));
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.option-header {
+    margin-bottom: 2rem;
+}
+
+.option-header i {
+    font-size: 3rem;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+}
+
+.option-header h3 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-gold);
+}
+
+.price span {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.features li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.features i {
+    color: var(--primary-gold);
+    font-size: 0.9rem;
+}
+
+.select-plan {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Signup Form */
+.signup-form {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-light);
+}
+
+.signup-form h2 {
+    text-align: center;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--border-light);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-gold);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.form-group input.error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.payment-info {
+    text-align: center;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+#paypal-button-container {
+    margin-top: 2rem;
+}
+
+#freeSignupBtn {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .membership-selection {
+        grid-template-columns: 1fr;
+    }
+    
+    .signup-container {
+        padding: 1rem;
+    }
+    
+    .signup-form {
+        padding: 2rem;
+    }
+}
