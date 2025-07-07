@@ -99,9 +99,17 @@ nav a:focus,
   }
 }
 
-/* Push nav down only on home page when banner is visible */
-.home-page nav {
-  margin-top: 50px;
+/* Sticky navigation that stays at top when scrolling */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Ensure banner doesn't interfere with nav */
+.in-progress-banner {
+  position: relative;
+  z-index: 99;
 }
 
 

@@ -7,6 +7,9 @@ nav,
   justify-content: center;
   gap: 1.5em;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav a,
