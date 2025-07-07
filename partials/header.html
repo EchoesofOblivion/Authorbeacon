@@ -1,10 +1,59 @@
-<nav class="navbar">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="mission.html">Mission</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="featured.html">Featured Authors</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="join.html">Join</a></li>
-  </ul>
-</nav>
+
+<header>
+  <div class="in-progress-banner">
+    🚀 We're building something exciting! AuthorBeacon is under construction, but we're working hard to bring you the best resources for indie authors. Stay tuned for updates!
+  </div>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="index.html" aria-label="Home">
+      <span>🏠</span> Home
+    </a>
+    <a href="mission.html" aria-label="Our Mission">
+      <span>🎯</span> Mission
+    </a>
+    <a href="services.html" aria-label="Our Services">
+      <span>⚡</span> Services
+    </a>
+    <a href="featured.html" aria-label="Featured Author">
+      <span>⭐</span> Featured Author
+    </a>
+    <a href="blog.html" aria-label="Blog">
+      <span>📝</span> Blog
+    </a>
+    <a href="contact.html" aria-label="Contact Us">
+      <span>📧</span> Contact
+    </a>
+    <a href="feedback.html" aria-label="Feedback">
+      <span>💬</span> Feedback
+    </a>
+    <a href="index.html#cta" class="cta-link" aria-label="Join Our Community">
+      <span>✨</span> Join
+    </a>
+  </nav>
+</header>
+
+<style>
+.main-nav .cta-link {
+  background: linear-gradient(135deg, var(--primary-orange), var(--primary-dark));
+  border-radius: 20px;
+  padding: 0.8rem 1.5rem;
+  margin-left: 1rem;
+}
+
+.main-nav .cta-link:hover {
+  background: linear-gradient(135deg, var(--primary-dark), #b8730a);
+  transform: translateY(-2px) scale(1.05);
+}
+
+.main-nav span {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .main-nav .cta-link {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+</style>

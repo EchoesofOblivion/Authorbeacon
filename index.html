@@ -1,286 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AuthorBeacon - Home</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuthorBeacon – Empowering Independent Authors</title>
+    <meta name="description" content="AuthorBeacon empowers independent authors with resources, community, and support for every step of their publishing journey.">
+    <meta name="keywords" content="indie authors, self-publishing, writing resources, book publishing, author community">
 
-    <!-- Meta for PWA -->
-    <meta name="apple-mobile-web-app-title" content="AuthorBeacon" />
-    <meta name="theme-color" content="#4b0082" />
-    <meta name="theme-color" content="#4b0082" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#2d0036" media="(prefers-color-scheme: dark)" />
-    <meta name="msapplication-TileColor" content="#4b0082" />
-    <meta name="description" content="Discover the services AuthorBeacon offers to support indie authors: writing guides, cover design, publishing help, and community." />
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
 
-    <!-- Favicon Links -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/styles.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="AuthorBeacon – Empowering Independent Authors">
+    <meta property="og:description" content="Join our community of indie authors and get the resources you need to succeed.">
+    <meta property="og:image" content="images/home-bg.jpeg">
+    <meta property="og:url" content="https://authorbeacon.com">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <div id="header"></div>
 
-    <!-- Shared Styles -->
-    <link rel="stylesheet" href="styles/styles.css" />
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVEPEZLV0B"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-QVEPEZLV0B");
-    </script>
-  </head>
-  <body class="home-page">
-    <!-- In-Progress Banner -->
-<div class="in-progress-banner">
-  We’re building something exciting! AuthorBeacon is under construction, but
-  we’re working hard to bring you the best resources for indie authors. Stay
-  tuned for updates!
-</div>
-
-<!-- ✅ NAVIGATION - now above header image -->
-<nav aria-label="Main navigation">
-  <a href="index.html">Home</a>
-  <a href="mission.html">Mission</a>
-  <a href="services.html">Services</a>
-  <a href="featured.html">Featured Author</a>
-  <a href="contact.html">Contact</a>
-  <a href="index.html#cta">Join</a>
-</nav>
-
-<!-- ✅ HEADER - now below nav -->
-<header class="page-header home-header">
-  <h1 class="site-title">AuthorBeacon</h1>
-  <p class="site-subtitle">A Lighthouse for Independent Voices</p>
-</header>
-
-<!-- ✅ WAVE TRANSITION -->
-<div class="header-divider">
-  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-    <defs>
-      <linearGradient id="fadeDown" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="white" stop-opacity="0.8" />
-        <stop offset="100%" stop-color="white" stop-opacity="1" />
-      </linearGradient>
-    </defs>
-    <path d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z" fill="url(#fadeDown)"></path>
-  </svg>
-</div>
-
-</header>
-
-
-    <!-- Main Content with overlay styling -->
-    <main class="container home-overlay">
-      <!-- SECTION: Introduction -->
-      <section id="intro">
-        <h2>Welcome to AuthorBeacon</h2>
-        <p>Whether you’re just starting your writing journey or you’ve already published books, AuthorBeacon is here to help you shine. This platform was created by an indie writer, for indie writers.</p>
-        <p>Our mission is simple: to provide a safe, welcoming, and affordable space where independent authors can share their work, grow their skills, and connect with a supportive community.</p>
-        <p>I built AuthorBeacon because I believe in your voice. Your story matters. Let’s build something great together.</p>
-        <p class="quote-author">&mdash; Jeremy Nagy, Founder of AuthorBeacon</p>
-      </section>
-
-      <hr class="section-divider" />
-
-      <!-- SECTION: Mission -->
-      <section id="mission">
-        <h2>Our Mission</h2>
-        <p>To empower, support, and celebrate independent authors at every step of their journey.</p>
-      </section>
-
-      <hr class="section-divider" />
-
-      <!-- SECTION: Services Overview -->
-      <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-          <li>Writing guides and helpful resources</li>
-          <li>Book cover design and formatting assistance</li>
-          <li>Support for self-publishing and indie-friendly options</li>
-          <li>Opportunities for author collaboration and networking</li>
-        </ul>
-      </section>
-
-      <hr class="section-divider" />
-
-      <!-- SECTION: Quotes Carousel -->
-      <section id="quotes" class="quote-carousel">
-        <h2>Words to Inspire</h2>
-        <div class="carousel-container">
-          <div class="quote-slide active">
-            <blockquote>
-              “The beginning is the most important part of the work.”
-              <span class="quote-author">&mdash; Plato</span>
-            </blockquote>
-          </div>
-          <div class="quote-slide">
-            <blockquote>
-              “If I waited for perfection, I would never write a word.”
-              <span class="quote-author">&mdash; Margaret Atwood</span>
-            </blockquote>
-          </div>
-          <div class="quote-slide">
-            <blockquote>
-              “As a writer, you should not judge. You should understand.”
-              <span class="quote-author">&mdash; Ernest Hemingway</span>
-            </blockquote>
-          </div>
+    <header class="page-header home-header">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="site-title">AuthorBeacon</h1>
+                <p class="site-subtitle">Empowering Independent Authors to Shine</p>
+                <a href="#services" class="btn btn-large">Discover Our Services</a>
+            </div>
         </div>
-        <div class="carousel-buttons">
-          <button class="carousel-btn prev" type="button">&larr; Prev</button>
-          <button class="carousel-btn next" type="button">Next &rarr;</button>
-        </div>
-      </section>
+    </header>
 
-      <hr class="section-divider" />
+    <main class="container">
+        <!-- Mission Section -->
+        <section id="mission" class="section">
+            <div class="content-card text-center">
+                <h2>Our Mission</h2>
+                <p class="text-large">To empower, support, and celebrate independent authors at every step of their journey.</p>
+                <a href="mission.html" class="btn">Learn More About Our Mission</a>
+            </div>
+        </section>
 
-      <!-- SECTION: Featured Author -->
-      <section id="featured">
-        <h2>Featured Author</h2>
-        <p>Coming soon! We'll spotlight amazing indie authors here.</p>
-      </section>
+        <hr class="section-divider" />
 
-      <hr class="section-divider" />
+        <!-- Services Overview -->
+        <section id="services" class="section">
+            <div class="text-center mb-3">
+                <h2>What We Offer</h2>
+                <p class="text-large text-secondary">Supporting indie authors at every stage of their creative journey</p>
+            </div>
 
-      <!-- SECTION: Hero Callout -->
-      <section id="hero">
-        <div class="hero-content">
-          <h1>Shining a Light on Indie Authors</h1>
-          <p>Your journey matters. We're here to support and amplify your voice.</p>
-        </div>
-      </section>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">📚</div>
+                    <h3>Writing Resources</h3>
+                    <p>Access curated guides, writing prompts, and productivity tools to boost your creativity and overcome writer's block.</p>
+                </div>
 
-      <!-- SECTION: Testimonials -->
-      <section id="testimonials">
-        <div class="testimonial-overlay">
-          <h2>What Writers Are Saying</h2>
-          <blockquote>
-            “A place for writers' testimonials.”
-            <span class="quote-author">&mdash; Placeholder, writer</span>
-          </blockquote>
-        </div>
-      </section>
+                <div class="service-item">
+                    <div class="service-icon">🎨</div>
+                    <h3>Book Cover Design</h3>
+                    <p>Professional cover design services to help your book stand out in the crowded marketplace and attract readers.</p>
+                </div>
 
-      <hr class="section-divider" />
+                <div class="service-item">
+                    <div class="service-icon">📖</div>
+                    <h3>Publishing Support</h3>
+                    <p>Step-by-step guidance through the self-publishing process, from manuscript formatting to distribution platforms.</p>
+                </div>
 
-      <!-- SECTION: CTA -->
-      <section id="cta" class="cta">
-        <h2>Ready to Shine?</h2>
-        <p>Join our community of indie authors and take your writing journey to the next level.</p>
-        <a href="mailto:support@authorbeacon.com">Sign Up</a>
-      </section>
+                <div class="service-item">
+                    <div class="service-icon">🤝</div>
+                    <h3>Community & Networking</h3>
+                    <p>Connect with fellow authors, share experiences, and build lasting relationships in our supportive community.</p>
+                </div>
+            </div>
 
-      <hr class="section-divider" />
+            <div class="text-center mt-3">
+                <a href="services.html" class="btn btn-large">Explore All Services</a>
+            </div>
+        </section>
 
-      <!-- SECTION: Feedback Card -->
-      <section id="feedback" class="feedback-card">
-        <h2>Feedback & Suggestions</h2>
-        <p>Have a suggestion or found an issue? We’d love to hear from you!</p>
-        <a href="feedback.html" class="feedback-btn">Leave Feedback</a>
-      </section>
+        <hr class="section-divider" />
+
+        <!-- Quotes Carousel -->
+        <section id="quotes" class="section">
+            <div class="quote-carousel">
+                <h2>Words of Inspiration</h2>
+                <div class="carousel-container">
+                    <div class="quote-slide active">
+                        <p>"The first draft of anything is shit."</p>
+                        <span class="quote-author">— Ernest Hemingway</span>
+                    </div>
+                    <div class="quote-slide">
+                        <p>"You can't use up creativity. The more you use, the more you have."</p>
+                        <span class="quote-author">— Maya Angelou</span>
+                    </div>
+                    <div class="quote-slide">
+                        <p>"There is no greater agony than bearing an untold story inside you."</p>
+                        <span class="quote-author">— Maya Angelou</span>
+                    </div>
+                    <div class="quote-slide">
+                        <p>"Write what you know. That should leave you with a lot of free time."</p>
+                        <span class="quote-author">— Howard Nemerov</span>
+                    </div>
+                </div>
+                <div class="carousel-buttons">
+                    <button class="carousel-btn carousel-prev" aria-label="Previous quote">← Previous</button>
+                    <button class="carousel-btn carousel-next" aria-label="Next quote">Next →</button>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- Featured Author Teaser -->
+        <section id="featured-teaser" class="section">
+            <div class="content-card">
+                <h2>Featured Author Spotlight</h2>
+                <p>Each month, we showcase an inspiring independent author who has made their mark in the publishing world. Discover their journey, challenges, and successes.</p>
+                <div class="text-center mt-2">
+                    <a href="featured.html" class="btn">Meet Our Featured Author</a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- Call to Action -->
+        <section id="cta" class="section">
+            <div class="cta">
+                <h2>Ready to Begin Your Journey?</h2>
+                <p>Join thousands of independent authors who are already part of our supportive community. Get access to exclusive resources, connect with fellow writers, and take your publishing dreams to the next level.</p>
+                <a href="contact.html" class="btn btn-large">Join Our Community</a>
+            </div>
+        </section>
+
+        <!-- Feedback Section -->
+        <section id="feedback" class="section">
+            <div class="feedback-card">
+                <h2>Help Us Improve</h2>
+                <p>Your feedback is invaluable in helping us create the best possible platform for indie authors. Share your thoughts, suggestions, or ideas with us.</p>
+                <a href="feedback.html" class="feedback-btn">Share Your Feedback</a>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <div class="social-media">
-          <h3>Follow Us</h3>
-          <ul>
-            <li>
-              <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener" aria-label="Instagram">
-                <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/yourusername" target="_blank" rel="noopener" aria-label="X">
-                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener" aria-label="Facebook">
-                <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="contact-info">
-          <p>
-            Email:
-            <a href="mailto:support@authorbeacon.com">support@authorbeacon.com</a>
-          </p>
-        </div>
-      </div>
-      <p>&copy; 2025 AuthorBeacon. All rights reserved.</p>
-    </footer>
+    <div id="footer"></div>
 
-    <!-- Quote Carousel Script -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const slides = document.querySelectorAll(".quote-slide");
-        const prevBtn = document.querySelector(".carousel-btn.prev");
-        const nextBtn = document.querySelector(".carousel-btn.next");
-        let currentSlide = 0;
-        let slideInterval;
+    <!-- Scripts -->
+    <script src="js/includes.js"></script>
 
-        function showSlide(index) {
-          slides.forEach((slide, i) => {
-            slide.classList.toggle("active", i === index);
-          });
+    <style>
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
         }
 
-        function nextSlide() {
-          currentSlide = (currentSlide + 1) % slides.length;
-          showSlide(currentSlide);
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
         }
 
-        function prevSlide() {
-          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-          showSlide(currentSlide);
+        .hero-content {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        function startAutoSlide() {
-          slideInterval = setInterval(nextSlide, 7000);
+        @media (max-width: 768px) {
+            .home-header .site-title {
+                font-size: 2.5rem;
+            }
+
+            .home-header .site-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
         }
-
-        function stopAutoSlide() {
-          clearInterval(slideInterval);
-        }
-
-        if (prevBtn && nextBtn) {
-          prevBtn.addEventListener("click", () => {
-            stopAutoSlide();
-            prevSlide();
-            startAutoSlide();
-          });
-
-          nextBtn.addEventListener("click", () => {
-            stopAutoSlide();
-            nextSlide();
-            startAutoSlide();
-          });
-        }
-
-        showSlide(currentSlide);
-        startAutoSlide();
-      });
-    </script>
-
-    <!-- Register Service Worker -->
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("/service-worker.js")
-          .then((reg) => console.log("✅ Service Worker registered:", reg.scope))
-          .catch((err) => console.error("❌ Service Worker registration failed:", err));
-      }
-    </script>
-   
+    </style>
 </body>
 </html>
